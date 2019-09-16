@@ -13,4 +13,4 @@ path = os.path.expanduser("~/Desktop")
 
 os.chdir(path)
 
-os.mkdir("Ava Rose The Boys Stink")
+os.mkdir("Changed the name of the directory")
