@@ -12,6 +12,9 @@ os.chdir(path)
 #Time needs to be converted into a string, research 'strftime' and tell me what it does.
 currentDT = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 
+# 'strftime' is a method that basically takes 'datetime' and turn it into a string to make it human readable
+# 'strptime' does the opposite
+
 newfolder = os.mkdir("Wakanda Forever")
 
 path = os.path.expanduser("~/Desktop/Wakanda Forever")
