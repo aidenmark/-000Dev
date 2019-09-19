@@ -4,36 +4,21 @@
 # Tues 9/17/2019
 
 import os
-
-# Use path.expander to expand the inital path of the user's home directory
+import datetime
 
 path = os.path.expanduser("~/Desktop")
-
-# Change the user's directory to their Desktop
-
 os.chdir(path)
 
-# Create a new directory (folder) on the user's Desktop
+#Time needs to be converted into a string, research 'strftime' and tell me what it does.
+currentDT = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 
-os.mkdir("Wakanda Forever")
-
-# Create a path that navigates to the newly created directory
+newfolder = os.mkdir("Wakanda Forever")
 
 path = os.path.expanduser("~/Desktop/Wakanda Forever")
 
 os.chdir(path)
 
-# Create a file to write to in the newly created directory
-
 f= open("index.html", "w+")
 
-# Write the current time to the third line of the file
-
-import datetime
-
-currentDT = datetime.datetime.now()
-
-f.write("currentDT")
-
-
-
+f.write(currentDT)
+f.close()
