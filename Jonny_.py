@@ -8,6 +8,9 @@ import datetime
 import os.path
 import shutil
 
+# 'shutil' helps to automate copying files and directories; saves the steps of opening, reading, 
+# writing and closing files when there is no actual processing
+
 path = os.path.expanduser("~/Desktop")
 os.chdir(path)
 
@@ -17,17 +20,17 @@ currentDT = datetime.datetime.now().strftime("%m/%d/%Y - %H:%M")
 
 if os.path.exists(w):
     print "It exists"
-    os.chdir(w)
-    print cwd
+    os.chdir(w) #change user's directory to wanted directory
+    print cwd #necessary for trobleshooting purposes
     f = open("index.html", "w+")
     f.write(currentDT)
     f.close()
 else:
     print "It does not exist."
     print ""
-    os.mkdir(w)
-    os.chdir(w)
-    print "Directory Created."
+    os.mkdir(w) #make the directory on the user's desktop
+    os.chdir(w) #change directory to newly created directory on user's desktop
+    print "Directory Created." #necessary checkpoint in troubleshooting process
     f = open("index.html", "w+")
     f.write(currentDT)
     f.close()
