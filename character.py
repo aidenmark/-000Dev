@@ -6,7 +6,7 @@
 
 import math
 
-name = input("What is your name?  ")
+name = input("What is your name?  ") # I don't understand why the program stops after this
 age = int(input("How old are you?  "))
 year = int(input("What year is it?  "))
 print("Year:  ", year)
@@ -14,12 +14,14 @@ print("Year:  ", year)
 print("Name:  ", name)
 print("Age:  ", age)
 
-def future(myParam):
-	for i in age:
-		future(year + 100)
+# May not need
+
+# def future(myParam):
+	# for i in age:
+		# future(year + 100)
 
 
-# Sample Solution
+# Sample Solution from site
 
 # name = input("What is your name: ")
 # age = int(input("How old are you: "))
