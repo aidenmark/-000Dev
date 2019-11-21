@@ -4,20 +4,17 @@
 
 # www.practicepython.org
 
-name = raw_input("What is your name?  ") # I don't understand why the program stops after this
-age =  raw_input("How old are you?  ")
-year = raw_input("What year is it?  ")
+import math
 
-print("Year:  ", year)
-print("Name:  ", name)
-print("Age:  ", age)
+name = str(raw_input("What is your name?  "))
+age =  int(raw_input("How old are you?  "))
+year = int(raw_input("What year is it?  "))
+future = int((year - age)+1000)
 
-# May not need
+print(name, "will be 1000 years old in the year", future)
 
-# def future(myParam):
-	# for i in age:
-		# future(year + 100)
-
+# How do I get the quotation marks and commas to not appear 
+# in the output?
 
 # Sample Solution from site
 
