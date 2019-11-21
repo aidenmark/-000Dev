@@ -4,13 +4,11 @@
 
 # www.practicepython.org
 
-import math
+name = raw_input("What is your name?  ") # I don't understand why the program stops after this
+age =  raw_input("How old are you?  ")
+year = raw_input("What year is it?  ")
 
-name = input("What is your name?  ") # I don't understand why the program stops after this
-age = int(input("How old are you?  "))
-year = int(input("What year is it?  "))
 print("Year:  ", year)
-
 print("Name:  ", name)
 print("Age:  ", age)
 
@@ -27,4 +25,3 @@ print("Age:  ", age)
 # age = int(input("How old are you: "))
 # year = str((2014 - age)+100)
 # print(name + " will be 100 years old in the year " + year)
-
