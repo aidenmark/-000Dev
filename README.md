@@ -1,1 +1,2 @@
-# This repository will show work with the Python language
+# .py 
+This repository will show work with the Python language
