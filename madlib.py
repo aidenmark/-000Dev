@@ -1,10 +1,10 @@
 # Aeriel Denmark
 # August 2022
 
-# The following program is a MadLib generator.
+# The following program is a MadLib generator
 
-# The program will prompt the user for an input that will then be assigned to a variable.
-# The variables will be concated together to form a story based on the inputs from the user.
+# The program will prompt the user for an input that will then be assigned to a variable
+# The variables will be concated together to form a story based on the inputs from the user
 
 first_name = input("Enter a first name: ")
 last_name = input("Enter a last name: ")
