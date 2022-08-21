@@ -1,3 +1,6 @@
+# Aeriel Denmark
+# Function(s) + Loop(s)
+
 # The following is a function that defines the paramaters of 'say_hello'
 def say_hello(myParam):
     print("Hello, World {}" .format(myParam))
